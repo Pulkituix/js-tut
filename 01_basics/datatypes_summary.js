@@ -23,5 +23,30 @@ const myFun = function(){
     console.log("Hello World");
 }
 
-console.log(typeof ousideTemp); // object
-console.log(typeof BigIntNumber);
+//console.log(typeof ousideTemp); // object
+//console.log(typeof BigIntNumber); // bigint
+
+
+// *********
+
+// Stack(Primitive) , Heap(Non-Primitive)
+
+let myname = "Pulkit";
+let anothername = myname;
+anothername = "Pulli"
+
+console.log(myname);
+console.log(anothername);
+
+let userone = {
+    email: "pulkit@uix.in",
+    upi: "pulkit@ybl"
+}
+
+let usertwo = userone;
+
+usertwo.email = "pulkit@gmail.com";
+
+// pulkit@gmail.com in both
+console.log(userone.email);
+console.log(usertwo.email);
